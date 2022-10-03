@@ -1,0 +1,3 @@
+[submodule "tutorials/pizzeria/hmi/modern"]
+	path = tutorials/pizzeria/hmi/modern
+	url = https://github.com/7Matteo/web2
