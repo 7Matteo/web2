@@ -34,8 +34,11 @@ const Navbar = () => {
                 <a class="nav-link" href="#" data-uri="/new">New Page</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" data-uri="/registerMovie">Register a movie</a>
-              </li>                           
+                <a class="nav-link" href="#" data-uri="/addMoviePage">Register a movie</a>
+              </li>       
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-uri="/viewMoviePage">Movies registered</a>
+              </li>                     
             </ul>
           </div>
         </div>
