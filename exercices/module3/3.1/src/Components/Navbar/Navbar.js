@@ -38,7 +38,10 @@ const Navbar = () => {
               </li>       
               <li class="nav-item">
                 <a class="nav-link" href="#" data-uri="/viewMoviePage">Movies registered</a>
-              </li>                     
+              </li>     
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-uri="/animePage">Test animations</a>
+              </li>                
             </ul>
           </div>
         </div>
