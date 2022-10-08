@@ -1,11 +1,14 @@
 import { clearPage } from '../../utils/render';
+import { readAllMovies } from '../../utils/movies';
+
+
 
 
 const ViewMoviePage = () => {
-
-  
+    const movies = readAllMovies();
+    
     const main = document.querySelector('main');
-    const viewMoviePage = `
+    let viewMoviePage = `
         <table class="table">
             <thead class="thead-dark">
             <tr>
@@ -14,13 +17,23 @@ const ViewMoviePage = () => {
                 <th scope="col">Budget (million)</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-            </tr>
-            </tbody>
+            <tbody>`
+            
+            
+
+        movies.forEach(element => {
+            viewMoviePage += 
+            `<tr>
+            <th scope="row">
+                <a href="${element.link}">${element.title}</a>
+            </th>
+            <td>${element.duration}</td>
+            <td>${element.budget}</td>
+            </tr>`
+        });
+
+        viewMoviePage += 
+        `</tbody>
         </table>`;
     main.innerHTML = viewMoviePage;
 };

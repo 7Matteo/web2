@@ -5,7 +5,7 @@ const addOneMovie = (movie) => {
     
 }
 
-const readAllMovies = () => {
-}
+const readAllMovies = () => films;
+
 
 export {addOneMovie, readAllMovies};
