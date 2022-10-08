@@ -6,7 +6,7 @@ const RegisterMoviePage = () => {
 
   
     const main = document.querySelector('main');
-    const homePage = `
+    const registerMoviePage = `
     
     <div class="d-flex justify-content-center">
         
@@ -31,7 +31,7 @@ const RegisterMoviePage = () => {
         </form>
       </div>
     </div>`;
-    main.innerHTML = homePage;
+    main.innerHTML = registerMoviePage;
 };
 
 const RegisterMovie = () => {
