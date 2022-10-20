@@ -1,3 +1,7 @@
+import { serialize } from '../utils/json';
+import { parse } from '../utils/json';
+import { path } from '../app';
+
 var express = require('express');
 var router = express.Router();
 
@@ -54,7 +58,7 @@ router.post('/', function (req, res) {
 
   const newFilm = { id: nextId, title, link, duration, budget };
 
-  films.push(newFilm);
+  serialize('../data/films.json',newFilm);
 
   return res.json(newFilm);
 });
